@@ -1,0 +1,125 @@
+
+
+/* === Card Component Styling === */
+.card {
+  background-color: white;
+  border-radius: 12px;             
+  border: none;                     
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+}
+
+/* === Product Image Styling inside Cards === */
+.card-img-top {
+  max-height: 250px;             
+  object-fit: contain;              
+}
+
+/* === Global Layout Fixes === */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;        
+  overflow-x: hidden;               
+}
+
+/* === Utility Class for Fullscreen Sections === */
+.fullscreen-section {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* === Navbar Styling on Small Screens === */
+.navbar-collapse {
+  justify-content: flex-end;    
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.1rem;          
+  }
+  .navbar-collapse {
+    background-color: #212529;     
+    padding: 1rem;
+  }
+  .nav-link {
+    text-align: right;             
+    padding-right: 1.5rem;
+  }
+}
+
+/* === Image Styling in Cards === */
+.card-img-top {
+  height: 250px;                   
+  object-fit: contain;            
+  background-color: white;
+  padding: 1rem;
+}
+
+/* === General Button Sizing === */
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+}
+
+/* === Button Adjustments on Mobile === */
+@media (max-width: 576px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* === Responsive Form Styling === */
+form {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+/* === Typography Tweaks for Smaller Screens === */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Ensures Pages Fill Full Viewport === */
+.page-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* === Responsive Product Grid === */
+@media (max-width: 768px) {
+  .product-grid .col {
+    flex: 0 0 100%;                /* Full width on small screens */
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .product-grid .col {
+    flex: 0 0 50%;                 /* Two columns on medium screens */
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 993px) {
+  .product-grid .col {
+    flex: 0 0 33.3333%;            /* Three columns on large screens */
+    max-width: 33.3333%;
+  }
+}
